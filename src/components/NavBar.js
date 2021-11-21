@@ -67,11 +67,11 @@ const NavBtn = styled.div`
 `
 
 
-const NavBar = () =>{
+const NavBar = ({toggle}) =>{
     return(
         <Nav>
-            <Logo to='/' > ELIXR </Logo>
-            <MenuBars />
+            <Logo to='/' > @ALANBBARROS </Logo>
+            <MenuBars onClick={toggle} />
             <NavMenu>
                 {menuData.map((item, index) =>{
                     return(
@@ -82,7 +82,7 @@ const NavBar = () =>{
                 })}
             </NavMenu>
             <NavBtn>
-            <Button primary={true} to='/contact' > Contact Us</Button>
+            <Button primary="true" to='/contact' > Entre em Contato</Button>
             </NavBtn>
 
         </Nav>

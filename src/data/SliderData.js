@@ -36,4 +36,5 @@ export const SliderData = [
         image: ImageFour,
         alt: 'House'
     },
+
 ]
